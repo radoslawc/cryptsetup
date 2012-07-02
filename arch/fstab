@@ -1,0 +1,17 @@
+# /etc/fstab: static file system information.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+
+#Entry for /dev/sdc3 :
+UUID=311f24c4-065d-4721-b5ee-8627c6a4421c	/	ext4	defaults	0	1
+#Entry for /dev/sdc1 :
+UUID=5662e7c7-63ff-4c3e-83fc-0287bd3e873f	/boot	ext2	defaults	0	1
+#Entry for /dev/sdc4 :
+UUID=ab8c4240-eac6-4ad2-b856-80ac7924b17c	/home	ext4	defaults	0	1
+#Entry for /dev/sdc2 :
+UUID=76e2a675-e68e-4584-b625-3df58efbc264	swap	swap	defaults	0	0
+none	/proc/bus/usb	usbfs	auto,busgid=108,busmode=0775,devgid=108,devmode=0664	0	0
+
+#tmpfs	/tmp	tmpfs	nodev,nosuid	0	0
+/dev/mapper/vol1	/mnt/a	ext3		defaults	0	2	
+
